@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Mono&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h2 {
+  @apply text-xl md:text-4xl;
+}
+
+p {
+  @apply text-xl tracking-tight leading-relaxed;
+}
+
+span {
+  @apply text-green-600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Noto Mono', monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  background-color: #0D0D0D;
+  color: #f2f2f2;
+  line-height: 1.6;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Restrict projects to fit better in full screen */
+.projects-container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+
+/* Hero section z-index adjustments */
+.hero-section {
+  position: relative;
+  z-index: 10; /* Ensure Hero content stays in front of the arrows */
+}
+
