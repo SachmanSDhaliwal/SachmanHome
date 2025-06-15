@@ -61,7 +61,13 @@ export const PROJECTS = [
   ];
 
   export const EXPERIENCES = [
-  
+     {
+      title: "Software Support Engineer",
+      company: "GEOTAB",
+      duration: "September 2025 - April 2026",
+      description:
+        "INCOMING AT GEOTAB",
+    },
     {
       title: "IT systems Developer",
       company: "Ontario Public Service(OPS)",
